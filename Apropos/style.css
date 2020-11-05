@@ -1,0 +1,202 @@
+@charset "utf-8";
+body {
+  background-color: #000000;
+  color:white;
+  font-family: "Arial Narrow";
+  margin-top: 60px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+* {
+  box-sizing: border-box;
+}
+
+/*HEADING-HEADING-HEADING*/
+div.logo {
+    position:absolute;
+    max-width:30%;
+    max-height:40%;
+    left:50%;
+    overflow:visible;
+	z-index: 11;
+}
+img.logologo {
+    position:relative;
+    max-width:100%;
+    max-height:100%;
+    margin-left:-50%;
+	z-index: 11;}
+.maingridcenter {
+  display: grid;
+  grid-template-columns: 1fr 1fr}
+.mainsection {
+  grid-column-start: 1; 
+  grid-column-end: 2; 
+  grid-row-start: 1; 
+  grid-row-end: 3;}
+.mainaside {
+  grid-column-start: 2; 
+  grid-column-end: 3; 
+  grid-row-start: 1; 
+  grid-row-end: 3;}
+.maincontenedor{
+  padding: 27px 0px 0 70px;
+  /*width: 100%;*/
+ display: inline-block;}
+
+/*DROPDOWN*/
+.dropbtn {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  left: 860%;}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: none;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;}
+.dropdown-content a {
+  color: white;
+  padding: 0px 0px;
+  text-align:right;
+  text-decoration: none;
+  display: block;}
+.dropdown-content a:hover {text-decoration: underline;}
+.dropdown:hover .dropdown-content {
+  display: block;}
+.dropdown:hover .dropbtn {background-color: black;}
+
+/*RESPONSIVE HEADING*/
+@media  (max-width: 800px) {
+  img.logologo{ min-width:220px;}
+  div.logo {max-width:100%; max-height:100%;left:40%;}
+  .dropdown {left: 50%; z-index: 999}
+  .maincontenedor{padding-top: 20px}}
+@media (min-width: 800px) and (max-width: 1200px) {
+	div.logo {
+    max-width:100%;
+    max-height:100%;
+    left:50%;}
+	.dropdown {left: 270%; z-index: 999}
+	}
+
+/*BODY-BODY-BODY-BODY-BODY*/
+.columnas {
+  padding: 50px 50px 70px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+ 
+}
+
+.textotexto{
+  padding: 0 20px 0 20px;
+  display:inline-block;
+
+}
+
+.contenido {
+  position: relative;
+  display: grid;
+  grid-template-columns:  30% 70% ;
+;
+  
+}
+.contenidodeverdad {
+  float: right;
+  position: relative;
+  font-size: 19px;
+  overflow: hidden;
+  text-align: right;
+  
+}
+.fotoabout{
+  padding:90px 0px 4px 0px;
+}
+
+/*COLUMNA ACTUALIDAD*/
+.apropos{
+  text-align: right;
+  font-size: 29px;
+  letter-spacing: 0.2em;
+  padding:40px 0px 10px 0px;
+}
+
+.links {
+  text-align: right;
+  text-decoration: none;
+  padding:0px 0px 15px 0px;
+ 
+}
+.links a{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.links a:hover{
+  text-decoration: underline;
+}
+
+
+.content-image{border-radius:100%;}
+/*FOOTER-FOOTER-FOOTER-FOOTER*/
+
+.insta {
+  float: left;
+  color: white;
+  width: 49.7%;
+  text-align: right;
+  padding-top: 0px;}
+.abajo:after {
+  content: "";
+  color: white;
+  display: table;
+  clear: both;}
+.instagram {
+ width:100%;	
+ margin: 0;
+ text-align: right;
+ list-style: none;
+}
+.instagram li{
+ display:inline-block;
+ list-style-type:none;
+}
+.fb {
+  float: left;
+  color: white;
+  width: 39%;
+  padding: 0px 0px 0 0px ;}
+.facebook {
+ width:100%;
+ padding: 0px 0 0px 0 ;
+ margin: 0;
+ list-style: none;
+}
+.facebook li{
+ display:inline-block;
+ list-style-type:none;
+}
+.copyright{
+	color:white;
+  	text-align: center;
+	float:center;
+	font-size: 14px;
+	padding: 0px 0px 5px 0px ;}
+.created{
+	color:grey;
+  	text-align: center;
+	float:center;
+	font-size: 12px;
+	padding: 0px 0px 15px 0px ;}

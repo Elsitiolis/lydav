@@ -297,13 +297,13 @@ img.logologo {
   .contenedor {padding: 0 0px 0 0}
   .subcontenedor1 {padding: 0 4px 0 0}
   .gridcenter {	display:grid; grid-template-columns: 120px 120px; grid-template-rows: auto 1fr auto;}
-  .actualidad{padding-top:100px }
-  .portfolio{padding-top:100px }}
+  .actualidad{padding-top:110px }
+  .portfolio{padding-top:110px }}
 
 @media (min-width: 800px) and (max-width: 1200px) {
 	.gridcenter {grid-auto-flow: row;}
-  	.actualidad{padding-top:100px }
-  	.portfolio{padding-top:100px }}
+  	.actualidad{padding-top:110px }
+  	.portfolio{padding-top:110px }}
 
 
 

@@ -1,0 +1,736 @@
+<script language="JavaScript" src="https://ssl.geoplugin.net/javascript.gp?k=c520d1052175527b" type="text/javascript"></script>
+<script src="handlebars-v4.0.11.js"></script>
+<script src="/site/templates/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+<link rel="stylesheet" href="jquery.jscrollpane.css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes dots {
+  0%, 20% {
+    color: transparent;
+    text-shadow: 0.25em 0 0 transparent, 0.5em 0 0 transparent; }
+  40% {
+    color: black;
+    text-shadow: 0.25em 0 0 transparent, 0.5em 0 0 transparent; }
+  60% {
+    text-shadow: 0.25em 0 0 black, 0.5em 0 0 transparent; }
+  80%, 100% {
+    text-shadow: .25em 0 0 black, .5em 0 0 black; } }
+    .activity-page .activity-container .instagram .grid-sizer {
+      width: 20%; }
+    .activity-page .activity-container .instagram a.instagram-item {
+      display: inline-block;
+      vertical-align: top;
+      color: black;
+      text-decoration: none;
+      margin-bottom: 30px;
+      padding: 10px;
+      margin-right: -2px; }
+      .activity-page .activity-container .instagram a.instagram-item.narrow {
+        width: 20%; }
+      .activity-page .activity-container .instagram a.instagram-item.regular {
+        width: 40%; }
+      .activity-page .activity-container .instagram a.instagram-item.wide {
+        width: 60%; }
+      .activity-page .activity-container .instagram a.instagram-item .img-header {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        padding-top: 4px;
+        display: -webkit-box;
+        /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        display: -moz-box;
+        /* MOZILLA */
+        display: -webkit-flex;
+        /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        display: flex;
+        /* NEW, Spec - Firefox, Chrome, Opera */
+        flex-direction: row;
+        justify-content: space-between; }
+        .activity-page .activity-container .instagram a.instagram-item .img-header h4 {
+          font-family: DINCondensed-Regular, Helvetica, Arial, sans-serif;
+          font-weight: normal;
+          font-style: normal;
+          line-height: 20px; }
+        .activity-page .activity-container .instagram a.instagram-item .img-header .postedby h4 {
+          text-align: right; }
+      .activity-page .activity-container .instagram a.instagram-item .pic {
+        margin-bottom: 30px; }
+        .activity-page .activity-container .instagram a.instagram-item .pic.js-slide {
+          margin-bottom: 0; }
+        .activity-page .activity-container .instagram a.instagram-item .pic.last {
+          margin-bottom: 0; }
+      .activity-page .activity-container .instagram a.instagram-item .caption {
+        border-bottom: 2px solid black;
+        padding: 10px 0;
+        margin-bottom: 0; }
+      .activity-page .activity-container .instagram a.instagram-item img {
+        width: 100%; }
+      .activity-page .activity-container .instagram a.instagram-item .nav-buttons {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0 20px;
+        z-index: 1000;
+        height: 40px; }
+        .activity-page .activity-container .instagram a.instagram-item .nav-buttons .slick-dots {
+          position: relative;
+          list-style: none;
+          text-align: center;
+          padding-left: 0;
+          margin: 0;
+          bottom: 0; }
+          .activity-page .activity-container .instagram a.instagram-item .nav-buttons .slick-dots li {
+            background-color: pink;
+            opacity: 0.6;
+            height: 8px;
+            width: 8px;
+            border-radius: 4px;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0.4;
+            margin: 0 4px;
+            display: inline-block; }
+            .activity-page .activity-container .instagram a.instagram-item .nav-buttons .slick-dots li button {
+              display: none; }
+            .activity-page .activity-container .instagram a.instagram-item .nav-buttons .slick-dots li:hover {
+              cursor: pointer; }
+            .activity-page .activity-container .instagram a.instagram-item .nav-buttons .slick-dots li.slick-active, .activity-page .activity-container .instagram a.instagram-item .nav-buttons .slick-dots li:hover {
+              opacity: 1; }
+      .activity-page .activity-container .instagram a.instagram-item .video-img {
+        position: relative; }
+        .activity-page .activity-container .instagram a.instagram-item .video-img button[name="play"] {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          text-align: center;
+          width: 80px;
+          height: 80px;
+          background: white;
+          border: 3px solid black;
+          border-radius: 100%;
+          margin: auto;
+          cursor: pointer; }
+          .activity-page .activity-container .instagram a.instagram-item .video-img button[name="play"]:focus {
+            outline: 0;
+            box-shadow: none; }
+          .activity-page .activity-container .instagram a.instagram-item .video-img button[name="play"]:after {
+            content: '';
+            display: inline-block;
+            position: relative;
+            top: 3px;
+            left: 5px;
+            border-style: solid;
+            border-width: 15px 0 15px 30px;
+            border-color: transparent transparent transparent black; }
+      .activity-page .activity-container .instagram a.instagram-item:hover .video-img button[name="play"] {
+        border-color: #F2BF29; }
+        .activity-page .activity-container .instagram a.instagram-item:hover .video-img button[name="play"]:after {
+          border-color: transparent transparent transparent #F2BF29; }
+
+
+
+.jspVerticalBar {
+  width: 8px; }
+
+.jspTrack {
+  background-color: white; }
+
+.jspDrag {
+  border-radius: 4px;
+  background-color: black; }
+
+body.studios-page {
+  overflow: hidden; }
+  body.studios-page .container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+
+.studios-page .infoBox {
+  min-width: 300px;
+  max-height: 450px;
+  overflow-y: scroll !important;
+  background-color: white;
+  border-top: 2px solid;
+  border-bottom: 2px solid; }
+  .studios-page .infoBox:hover {
+    cursor: pointer; }
+  .studios-page .infoBox .info-inner {
+    width: 100%;
+    padding: 20px; }
+    .studios-page .infoBox .info-inner:hover {
+      cursor: pointer; }
+    .studios-page .infoBox .info-inner .splash-img-preview {
+      width: 100%;
+      height: 13vw;
+      margin-bottom: 10px;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -webkit-background-position: center center;
+      -moz-background-position: center center;
+      -o-background-position: center center;
+      background-position: center center;
+      -webkit-background-attachment: inherit;
+      -moz-background-attachment: inherit;
+      -o-background-attachment: inherit;
+      background-attachment: inherit; }
+    .studios-page .infoBox .info-inner h3 {
+      line-height: 22px; }
+    .studios-page .infoBox .info-inner .contact_field p a {
+      background-image: none; }
+    .studios-page .infoBox .info-inner .contact_field span.ps_icon {
+      font-family: 'PS-icons';
+      position: relative;
+      width: 20px;
+      height: 20px;
+      top: 5px;
+      font-size: 20px;
+      margin-left: -2px; }
+    .studios-page .infoBox .info-inner .soon {
+      margin-top: 20px; }
+      .studios-page .infoBox .info-inner .soon img {
+        width: 100%; }
+
+.studios-page .shop-interaction {
+  display: none; }
+
+.studios-page .js-terturn-to-map {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: red;
+  z-index: 5000; }
+
+.studios-page .studio-container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: calc(100% + 32px);
+  bottom: 0;
+  z-index: 300;
+  background-color: white;
+  border-top: 3px solid black;
+  width: 100%;
+  padding: 30px 15px 0 30px;
+  -webkit-transition: top 0.5s ease;
+  -moz-transition: top 0.5s ease;
+  -ms-transition: top 0.5s ease;
+  -o-transition: top 0.5s ease;
+  transition: top 0.5s ease; }
+  .studios-page .studio-container > .inner {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -moz-box;
+    /* MOZILLA */
+    display: -webkit-flex;
+    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    /* NEW, Spec - Firefox, Chrome, Opera */
+    flex-direction: row;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%; }
+    .studios-page .studio-container > .inner .close-button {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1000; }
+      .studios-page .studio-container > .inner .close-button span.cross {
+        color: black;
+        width: 20px;
+        position: relative;
+        top: 1px;
+        margin-right: 3px; }
+      .studios-page .studio-container > .inner .close-button:hover {
+        cursor: pointer; }
+        .studios-page .studio-container > .inner .close-button:hover span.cross {
+          color: #F2BF29; }
+
+.studio-page .studio-container, .studio-page .about-container, .studios-page .studio-container, .studios-page .about-container, .about-page .studio-container, .about-page .about-container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  border-top: 3px solid black;
+  width: 100%;
+  padding: 30px 15px 0 30px;
+  -webkit-transition: top 0.5s ease;
+  -moz-transition: top 0.5s ease;
+  -ms-transition: top 0.5s ease;
+  -o-transition: top 0.5s ease;
+  transition: top 0.5s ease; }
+  .studio-page .studio-container .close-button, .studio-page .about-container .close-button, .studios-page .studio-container .close-button, .studios-page .about-container .close-button, .about-page .studio-container .close-button, .about-page .about-container .close-button {
+    position: absolute;
+    top: -31px;
+    padding: 4px 9px 5px;
+    background-color: black;
+    color: white;
+    right: 0; }
+    .studio-page .studio-container .close-button a, .studio-page .about-container .close-button a, .studios-page .studio-container .close-button a, .studios-page .about-container .close-button a, .about-page .studio-container .close-button a, .about-page .about-container .close-button a {
+      text-decoration: none;
+      color: white; }
+      .studio-page .studio-container .close-button a:hover, .studio-page .about-container .close-button a:hover, .studios-page .studio-container .close-button a:hover, .studios-page .about-container .close-button a:hover, .about-page .studio-container .close-button a:hover, .about-page .about-container .close-button a:hover {
+        color: #F2BF29; }
+      .studio-page .studio-container .close-button a .cross, .studio-page .about-container .close-button a .cross, .studios-page .studio-container .close-button a .cross, .studios-page .about-container .close-button a .cross, .about-page .studio-container .close-button a .cross, .about-page .about-container .close-button a .cross {
+        position: relative;
+        top: 1px; }
+  .studio-page .studio-container > .inner, .studio-page .about-container > .inner, .studios-page .studio-container > .inner, .studios-page .about-container > .inner, .about-page .studio-container > .inner, .about-page .about-container > .inner {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -moz-box;
+    /* MOZILLA */
+    display: -webkit-flex;
+    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    /* NEW, Spec - Firefox, Chrome, Opera */
+    flex-direction: row;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%; }
+    .studio-page .studio-container > .inner .close-button, .studio-page .about-container > .inner .close-button, .studios-page .studio-container > .inner .close-button, .studios-page .about-container > .inner .close-button, .about-page .studio-container > .inner .close-button, .about-page .about-container > .inner .close-button {
+      position: absolute;
+      top: 0;
+      z-index: 1000; }
+      .studio-page .studio-container > .inner .close-button a.back-to-studios, .studio-page .about-container > .inner .close-button a.back-to-studios, .studios-page .studio-container > .inner .close-button a.back-to-studios, .studios-page .about-container > .inner .close-button a.back-to-studios, .about-page .studio-container > .inner .close-button a.back-to-studios, .about-page .about-container > .inner .close-button a.back-to-studios {
+        color: black !important;
+        text-transform: lowercase !important; }
+      .studio-page .studio-container > .inner .close-button span.cross, .studio-page .about-container > .inner .close-button span.cross, .studios-page .studio-container > .inner .close-button span.cross, .studios-page .about-container > .inner .close-button span.cross, .about-page .studio-container > .inner .close-button span.cross, .about-page .about-container > .inner .close-button span.cross {
+        color: black;
+        width: 20px;
+        position: relative;
+        top: 1px;
+        margin-right: 3px; }
+      .studio-page .studio-container > .inner .close-button:hover, .studio-page .about-container > .inner .close-button:hover, .studios-page .studio-container > .inner .close-button:hover, .studios-page .about-container > .inner .close-button:hover, .about-page .studio-container > .inner .close-button:hover, .about-page .about-container > .inner .close-button:hover {
+        cursor: pointer; }
+        .studio-page .studio-container > .inner .close-button:hover span.cross, .studio-page .about-container > .inner .close-button:hover span.cross, .studios-page .studio-container > .inner .close-button:hover span.cross, .studios-page .about-container > .inner .close-button:hover span.cross, .about-page .studio-container > .inner .close-button:hover span.cross, .about-page .about-container > .inner .close-button:hover span.cross {
+          color: #F2BF29; }
+    .studio-page .studio-container > .inner .splash-img, .studio-page .about-container > .inner .splash-img, .studios-page .studio-container > .inner .splash-img, .studios-page .about-container > .inner .splash-img, .about-page .studio-container > .inner .splash-img, .about-page .about-container > .inner .splash-img {
+      width: calc(100% - 30px);
+      height: 40vh;
+      min-height: 300px;
+      margin: 0 15px 30px 15px;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      -webkit-background-position: center center;
+      -moz-background-position: center center;
+      -o-background-position: center center;
+      background-position: center center;
+      -webkit-background-attachment: inherit;
+      -moz-background-attachment: inherit;
+      -o-background-attachment: inherit;
+      background-attachment: inherit; }
+      .studio-page .studio-container > .inner .splash-img.mobile, .studio-page .about-container > .inner .splash-img.mobile, .studios-page .studio-container > .inner .splash-img.mobile, .studios-page .about-container > .inner .splash-img.mobile, .about-page .studio-container > .inner .splash-img.mobile, .about-page .about-container > .inner .splash-img.mobile {
+        display: none; }
+    .studio-page .studio-container > .inner .column, .studio-page .about-container > .inner .column, .studios-page .studio-container > .inner .column, .studios-page .about-container > .inner .column, .about-page .studio-container > .inner .column, .about-page .about-container > .inner .column {
+      width: 20%;
+      overflow-y: auto; }
+      .studio-page .studio-container > .inner .column.contact, .studio-page .studio-container > .inner .column.about-intro, .studio-page .about-container > .inner .column.contact, .studio-page .about-container > .inner .column.about-intro, .studios-page .studio-container > .inner .column.contact, .studios-page .studio-container > .inner .column.about-intro, .studios-page .about-container > .inner .column.contact, .studios-page .about-container > .inner .column.about-intro, .about-page .studio-container > .inner .column.contact, .about-page .studio-container > .inner .column.about-intro, .about-page .about-container > .inner .column.contact, .about-page .about-container > .inner .column.about-intro {
+        padding: 0 15px 60px 0;
+        word-break: break-word;
+        position: relative;
+        left: 0;
+        bottom: 0;
+        display: -webkit-box;
+        /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        display: -moz-box;
+        /* MOZILLA */
+        display: -webkit-flex;
+        /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        display: flex;
+        /* NEW, Spec - Firefox, Chrome, Opera */
+        flex-direction: column;
+        justify-content: flex-start; }
+        .studio-page .studio-container > .inner .column.contact h1, .studio-page .studio-container > .inner .column.contact h2, .studio-page .studio-container > .inner .column.contact h3, .studio-page .studio-container > .inner .column.contact h4, .studio-page .studio-container > .inner .column.contact h5, .studio-page .studio-container > .inner .column.about-intro h1, .studio-page .studio-container > .inner .column.about-intro h2, .studio-page .studio-container > .inner .column.about-intro h3, .studio-page .studio-container > .inner .column.about-intro h4, .studio-page .studio-container > .inner .column.about-intro h5, .studio-page .about-container > .inner .column.contact h1, .studio-page .about-container > .inner .column.contact h2, .studio-page .about-container > .inner .column.contact h3, .studio-page .about-container > .inner .column.contact h4, .studio-page .about-container > .inner .column.contact h5, .studio-page .about-container > .inner .column.about-intro h1, .studio-page .about-container > .inner .column.about-intro h2, .studio-page .about-container > .inner .column.about-intro h3, .studio-page .about-container > .inner .column.about-intro h4, .studio-page .about-container > .inner .column.about-intro h5, .studios-page .studio-container > .inner .column.contact h1, .studios-page .studio-container > .inner .column.contact h2, .studios-page .studio-container > .inner .column.contact h3, .studios-page .studio-container > .inner .column.contact h4, .studios-page .studio-container > .inner .column.contact h5, .studios-page .studio-container > .inner .column.about-intro h1, .studios-page .studio-container > .inner .column.about-intro h2, .studios-page .studio-container > .inner .column.about-intro h3, .studios-page .studio-container > .inner .column.about-intro h4, .studios-page .studio-container > .inner .column.about-intro h5, .studios-page .about-container > .inner .column.contact h1, .studios-page .about-container > .inner .column.contact h2, .studios-page .about-container > .inner .column.contact h3, .studios-page .about-container > .inner .column.contact h4, .studios-page .about-container > .inner .column.contact h5, .studios-page .about-container > .inner .column.about-intro h1, .studios-page .about-container > .inner .column.about-intro h2, .studios-page .about-container > .inner .column.about-intro h3, .studios-page .about-container > .inner .column.about-intro h4, .studios-page .about-container > .inner .column.about-intro h5, .about-page .studio-container > .inner .column.contact h1, .about-page .studio-container > .inner .column.contact h2, .about-page .studio-container > .inner .column.contact h3, .about-page .studio-container > .inner .column.contact h4, .about-page .studio-container > .inner .column.contact h5, .about-page .studio-container > .inner .column.about-intro h1, .about-page .studio-container > .inner .column.about-intro h2, .about-page .studio-container > .inner .column.about-intro h3, .about-page .studio-container > .inner .column.about-intro h4, .about-page .studio-container > .inner .column.about-intro h5, .about-page .about-container > .inner .column.contact h1, .about-page .about-container > .inner .column.contact h2, .about-page .about-container > .inner .column.contact h3, .about-page .about-container > .inner .column.contact h4, .about-page .about-container > .inner .column.contact h5, .about-page .about-container > .inner .column.about-intro h1, .about-page .about-container > .inner .column.about-intro h2, .about-page .about-container > .inner .column.about-intro h3, .about-page .about-container > .inner .column.about-intro h4, .about-page .about-container > .inner .column.about-intro h5 {
+          font-family: DINCondensed-Regular, Helvetica, Arial, sans-serif;
+          font-weight: normal;
+          font-style: normal; }
+        .studio-page .studio-container > .inner .column.contact .close-button h4, .studio-page .studio-container > .inner .column.contact .close-button h5, .studio-page .studio-container > .inner .column.about-intro .close-button h4, .studio-page .studio-container > .inner .column.about-intro .close-button h5, .studio-page .about-container > .inner .column.contact .close-button h4, .studio-page .about-container > .inner .column.contact .close-button h5, .studio-page .about-container > .inner .column.about-intro .close-button h4, .studio-page .about-container > .inner .column.about-intro .close-button h5, .studios-page .studio-container > .inner .column.contact .close-button h4, .studios-page .studio-container > .inner .column.contact .close-button h5, .studios-page .studio-container > .inner .column.about-intro .close-button h4, .studios-page .studio-container > .inner .column.about-intro .close-button h5, .studios-page .about-container > .inner .column.contact .close-button h4, .studios-page .about-container > .inner .column.contact .close-button h5, .studios-page .about-container > .inner .column.about-intro .close-button h4, .studios-page .about-container > .inner .column.about-intro .close-button h5, .about-page .studio-container > .inner .column.contact .close-button h4, .about-page .studio-container > .inner .column.contact .close-button h5, .about-page .studio-container > .inner .column.about-intro .close-button h4, .about-page .studio-container > .inner .column.about-intro .close-button h5, .about-page .about-container > .inner .column.contact .close-button h4, .about-page .about-container > .inner .column.contact .close-button h5, .about-page .about-container > .inner .column.about-intro .close-button h4, .about-page .about-container > .inner .column.about-intro .close-button h5 {
+          font-family: DINCondensed-Regular, Helvetica, Arial, sans-serif;
+          font-weight: normal;
+          font-style: normal; }
+        .studio-page .studio-container > .inner .column.contact a, .studio-page .studio-container > .inner .column.about-intro a, .studio-page .about-container > .inner .column.contact a, .studio-page .about-container > .inner .column.about-intro a, .studios-page .studio-container > .inner .column.contact a, .studios-page .studio-container > .inner .column.about-intro a, .studios-page .about-container > .inner .column.contact a, .studios-page .about-container > .inner .column.about-intro a, .about-page .studio-container > .inner .column.contact a, .about-page .studio-container > .inner .column.about-intro a, .about-page .about-container > .inner .column.contact a, .about-page .about-container > .inner .column.about-intro a {
+          color: black;
+          text-decoration: none; }
+          .studio-page .studio-container > .inner .column.contact a:hover, .studio-page .studio-container > .inner .column.about-intro a:hover, .studio-page .about-container > .inner .column.contact a:hover, .studio-page .about-container > .inner .column.about-intro a:hover, .studios-page .studio-container > .inner .column.contact a:hover, .studios-page .studio-container > .inner .column.about-intro a:hover, .studios-page .about-container > .inner .column.contact a:hover, .studios-page .about-container > .inner .column.about-intro a:hover, .about-page .studio-container > .inner .column.contact a:hover, .about-page .studio-container > .inner .column.about-intro a:hover, .about-page .about-container > .inner .column.contact a:hover, .about-page .about-container > .inner .column.about-intro a:hover {
+            color: #F2BF29; }
+      .studio-page .studio-container > .inner .column.contact span.ps_icon, .studio-page .about-container > .inner .column.contact span.ps_icon, .studios-page .studio-container > .inner .column.contact span.ps_icon, .studios-page .about-container > .inner .column.contact span.ps_icon, .about-page .studio-container > .inner .column.contact span.ps_icon, .about-page .about-container > .inner .column.contact span.ps_icon {
+        font-family: 'PS-icons';
+        position: relative;
+        width: 20px;
+        height: 20px;
+        top: 5px;
+        font-size: 20px;
+        margin-left: -2px; }
+      .studio-page .studio-container > .inner .column.contact .contact_field p a, .studio-page .about-container > .inner .column.contact .contact_field p a, .studios-page .studio-container > .inner .column.contact .contact_field p a, .studios-page .about-container > .inner .column.contact .contact_field p a, .about-page .studio-container > .inner .column.contact .contact_field p a, .about-page .about-container > .inner .column.contact .contact_field p a {
+        background-image: none; }
+      .studio-page .studio-container > .inner .column.events .events-block, .studio-page .about-container > .inner .column.events .events-block, .studios-page .studio-container > .inner .column.events .events-block, .studios-page .about-container > .inner .column.events .events-block, .about-page .studio-container > .inner .column.events .events-block, .about-page .about-container > .inner .column.events .events-block {
+        margin-top: 30px;
+        position: relative; }
+        .studio-page .studio-container > .inner .column.events .events-block .mobile-trigger, .studio-page .about-container > .inner .column.events .events-block .mobile-trigger, .studios-page .studio-container > .inner .column.events .events-block .mobile-trigger, .studios-page .about-container > .inner .column.events .events-block .mobile-trigger, .about-page .studio-container > .inner .column.events .events-block .mobile-trigger, .about-page .about-container > .inner .column.events .events-block .mobile-trigger {
+          display: none;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 30px;
+          height: 22px;
+          text-align: center; }
+          .studio-page .studio-container > .inner .column.events .events-block .mobile-trigger:hover, .studio-page .studio-container > .inner .column.events .events-block .mobile-trigger.hover, .studio-page .about-container > .inner .column.events .events-block .mobile-trigger:hover, .studio-page .about-container > .inner .column.events .events-block .mobile-trigger.hover, .studios-page .studio-container > .inner .column.events .events-block .mobile-trigger:hover, .studios-page .studio-container > .inner .column.events .events-block .mobile-trigger.hover, .studios-page .about-container > .inner .column.events .events-block .mobile-trigger:hover, .studios-page .about-container > .inner .column.events .events-block .mobile-trigger.hover, .about-page .studio-container > .inner .column.events .events-block .mobile-trigger:hover, .about-page .studio-container > .inner .column.events .events-block .mobile-trigger.hover, .about-page .about-container > .inner .column.events .events-block .mobile-trigger:hover, .about-page .about-container > .inner .column.events .events-block .mobile-trigger.hover {
+            cursor: pointer;
+            color: #F2BF29; }
+          .studio-page .studio-container > .inner .column.events .events-block .mobile-trigger span, .studio-page .about-container > .inner .column.events .events-block .mobile-trigger span, .studios-page .studio-container > .inner .column.events .events-block .mobile-trigger span, .studios-page .about-container > .inner .column.events .events-block .mobile-trigger span, .about-page .studio-container > .inner .column.events .events-block .mobile-trigger span, .about-page .about-container > .inner .column.events .events-block .mobile-trigger span {
+            position: relative;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: -webkit-box;
+            /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+            display: -ms-flexbox;
+            /* TWEENER - IE 10 */
+            display: -moz-box;
+            /* MOZILLA */
+            display: -webkit-flex;
+            /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+            display: flex;
+            /* NEW, Spec - Firefox, Chrome, Opera */
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 2px; }
+            .studio-page .studio-container > .inner .column.events .events-block .mobile-trigger span.arrow-up, .studio-page .about-container > .inner .column.events .events-block .mobile-trigger span.arrow-up, .studios-page .studio-container > .inner .column.events .events-block .mobile-trigger span.arrow-up, .studios-page .about-container > .inner .column.events .events-block .mobile-trigger span.arrow-up, .about-page .studio-container > .inner .column.events .events-block .mobile-trigger span.arrow-up, .about-page .about-container > .inner .column.events .events-block .mobile-trigger span.arrow-up {
+              display: none; }
+            .studio-page .studio-container > .inner .column.events .events-block .mobile-trigger span.arrow-down, .studio-page .about-container > .inner .column.events .events-block .mobile-trigger span.arrow-down, .studios-page .studio-container > .inner .column.events .events-block .mobile-trigger span.arrow-down, .studios-page .about-container > .inner .column.events .events-block .mobile-trigger span.arrow-down, .about-page .studio-container > .inner .column.events .events-block .mobile-trigger span.arrow-down, .about-page .about-container > .inner .column.events .events-block .mobile-trigger span.arrow-down {
+              display: -webkit-box;
+              /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+              display: -ms-flexbox;
+              /* TWEENER - IE 10 */
+              display: -moz-box;
+              /* MOZILLA */
+              display: -webkit-flex;
+              /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+              display: flex;
+              /* NEW, Spec - Firefox, Chrome, Opera */ }
+          .studio-page .studio-container > .inner .column.events .events-block .mobile-trigger.active span.arrow-up, .studio-page .about-container > .inner .column.events .events-block .mobile-trigger.active span.arrow-up, .studios-page .studio-container > .inner .column.events .events-block .mobile-trigger.active span.arrow-up, .studios-page .about-container > .inner .column.events .events-block .mobile-trigger.active span.arrow-up, .about-page .studio-container > .inner .column.events .events-block .mobile-trigger.active span.arrow-up, .about-page .about-container > .inner .column.events .events-block .mobile-trigger.active span.arrow-up {
+            display: -webkit-box;
+            /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+            display: -ms-flexbox;
+            /* TWEENER - IE 10 */
+            display: -moz-box;
+            /* MOZILLA */
+            display: -webkit-flex;
+            /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+            display: flex;
+            /* NEW, Spec - Firefox, Chrome, Opera */ }
+          .studio-page .studio-container > .inner .column.events .events-block .mobile-trigger.active span.arrow-down, .studio-page .about-container > .inner .column.events .events-block .mobile-trigger.active span.arrow-down, .studios-page .studio-container > .inner .column.events .events-block .mobile-trigger.active span.arrow-down, .studios-page .about-container > .inner .column.events .events-block .mobile-trigger.active span.arrow-down, .about-page .studio-container > .inner .column.events .events-block .mobile-trigger.active span.arrow-down, .about-page .about-container > .inner .column.events .events-block .mobile-trigger.active span.arrow-down {
+            display: none; }
+        .studio-page .studio-container > .inner .column.events .events-block .upcoming, .studio-page .studio-container > .inner .column.events .events-block .past, .studio-page .about-container > .inner .column.events .events-block .upcoming, .studio-page .about-container > .inner .column.events .events-block .past, .studios-page .studio-container > .inner .column.events .events-block .upcoming, .studios-page .studio-container > .inner .column.events .events-block .past, .studios-page .about-container > .inner .column.events .events-block .upcoming, .studios-page .about-container > .inner .column.events .events-block .past, .about-page .studio-container > .inner .column.events .events-block .upcoming, .about-page .studio-container > .inner .column.events .events-block .past, .about-page .about-container > .inner .column.events .events-block .upcoming, .about-page .about-container > .inner .column.events .events-block .past {
+          position: relative;
+          text-transform: uppercase;
+          text-align: right;
+          border-top: 2px solid black;
+          padding-top: 1px;
+          padding-bottom: 4px;
+          margin-bottom: -7px; }
+        .studio-page .studio-container > .inner .column.events .events-block .past, .studio-page .about-container > .inner .column.events .events-block .past, .studios-page .studio-container > .inner .column.events .events-block .past, .studios-page .about-container > .inner .column.events .events-block .past, .about-page .studio-container > .inner .column.events .events-block .past, .about-page .about-container > .inner .column.events .events-block .past {
+          opacity: 0.4; }
+        .studio-page .studio-container > .inner .column.events .events-block .events-list.past-events, .studio-page .about-container > .inner .column.events .events-block .events-list.past-events, .studios-page .studio-container > .inner .column.events .events-block .events-list.past-events, .studios-page .about-container > .inner .column.events .events-block .events-list.past-events, .about-page .studio-container > .inner .column.events .events-block .events-list.past-events, .about-page .about-container > .inner .column.events .events-block .events-list.past-events {
+          opacity: 0.4; }
+        .studio-page .studio-container > .inner .column.events .events-block .events-list .event .event-date, .studio-page .about-container > .inner .column.events .events-block .events-list .event .event-date, .studios-page .studio-container > .inner .column.events .events-block .events-list .event .event-date, .studios-page .about-container > .inner .column.events .events-block .events-list .event .event-date, .about-page .studio-container > .inner .column.events .events-block .events-list .event .event-date, .about-page .about-container > .inner .column.events .events-block .events-list .event .event-date {
+          padding: 1px 0;
+          width: 100%;
+          border-top: 2px solid black;
+          border-bottom: 2px solid black; }
+          .studio-page .studio-container > .inner .column.events .events-block .events-list .event .event-date h4, .studio-page .about-container > .inner .column.events .events-block .events-list .event .event-date h4, .studios-page .studio-container > .inner .column.events .events-block .events-list .event .event-date h4, .studios-page .about-container > .inner .column.events .events-block .events-list .event .event-date h4, .about-page .studio-container > .inner .column.events .events-block .events-list .event .event-date h4, .about-page .about-container > .inner .column.events .events-block .events-list .event .event-date h4 {
+            text-transform: uppercase;
+            margin-bottom: -4px; }
+        .studio-page .studio-container > .inner .column.events .events-block .events-list .event .event-content, .studio-page .about-container > .inner .column.events .events-block .events-list .event .event-content, .studios-page .studio-container > .inner .column.events .events-block .events-list .event .event-content, .studios-page .about-container > .inner .column.events .events-block .events-list .event .event-content, .about-page .studio-container > .inner .column.events .events-block .events-list .event .event-content, .about-page .about-container > .inner .column.events .events-block .events-list .event .event-content {
+          margin-top: 18px; }
+          .studio-page .studio-container > .inner .column.events .events-block .events-list .event .event-content .event-title, .studio-page .about-container > .inner .column.events .events-block .events-list .event .event-content .event-title, .studios-page .studio-container > .inner .column.events .events-block .events-list .event .event-content .event-title, .studios-page .about-container > .inner .column.events .events-block .events-list .event .event-content .event-title, .about-page .studio-container > .inner .column.events .events-block .events-list .event .event-content .event-title, .about-page .about-container > .inner .column.events .events-block .events-list .event .event-content .event-title {
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            line-height: 1.1; }
+          .studio-page .studio-container > .inner .column.events .events-block .events-list .event .event-content .event-link, .studio-page .about-container > .inner .column.events .events-block .events-list .event .event-content .event-link, .studios-page .studio-container > .inner .column.events .events-block .events-list .event .event-content .event-link, .studios-page .about-container > .inner .column.events .events-block .events-list .event .event-content .event-link, .about-page .studio-container > .inner .column.events .events-block .events-list .event .event-content .event-link, .about-page .about-container > .inner .column.events .events-block .events-list .event .event-content .event-link {
+            text-align: right;
+            margin-bottom: 20px; }
+            .studio-page .studio-container > .inner .column.events .events-block .events-list .event .event-content .event-link span.arrow, .studio-page .about-container > .inner .column.events .events-block .events-list .event .event-content .event-link span.arrow, .studios-page .studio-container > .inner .column.events .events-block .events-list .event .event-content .event-link span.arrow, .studios-page .about-container > .inner .column.events .events-block .events-list .event .event-content .event-link span.arrow, .about-page .studio-container > .inner .column.events .events-block .events-list .event .event-content .event-link span.arrow, .about-page .about-container > .inner .column.events .events-block .events-list .event .event-content .event-link span.arrow {
+              position: relative;
+              font-size: 15px;
+              bottom: 2px; }
+      .studio-page .studio-container > .inner .column.recent-work, .studio-page .studio-container > .inner .column.network, .studio-page .about-container > .inner .column.recent-work, .studio-page .about-container > .inner .column.network, .studios-page .studio-container > .inner .column.recent-work, .studios-page .studio-container > .inner .column.network, .studios-page .about-container > .inner .column.recent-work, .studios-page .about-container > .inner .column.network, .about-page .studio-container > .inner .column.recent-work, .about-page .studio-container > .inner .column.network, .about-page .about-container > .inner .column.recent-work, .about-page .about-container > .inner .column.network {
+        padding: 0 15px 60px; }
+        .studio-page .studio-container > .inner .column.recent-work .recent-publications, .studio-page .studio-container > .inner .column.network .recent-publications, .studio-page .about-container > .inner .column.recent-work .recent-publications, .studio-page .about-container > .inner .column.network .recent-publications, .studios-page .studio-container > .inner .column.recent-work .recent-publications, .studios-page .studio-container > .inner .column.network .recent-publications, .studios-page .about-container > .inner .column.recent-work .recent-publications, .studios-page .about-container > .inner .column.network .recent-publications, .about-page .studio-container > .inner .column.recent-work .recent-publications, .about-page .studio-container > .inner .column.network .recent-publications, .about-page .about-container > .inner .column.recent-work .recent-publications, .about-page .about-container > .inner .column.network .recent-publications {
+          margin-top: 15px; }
+          .studio-page .studio-container > .inner .column.recent-work .recent-publications .book .preview-img, .studio-page .studio-container > .inner .column.network .recent-publications .book .preview-img, .studio-page .about-container > .inner .column.recent-work .recent-publications .book .preview-img, .studio-page .about-container > .inner .column.network .recent-publications .book .preview-img, .studios-page .studio-container > .inner .column.recent-work .recent-publications .book .preview-img, .studios-page .studio-container > .inner .column.network .recent-publications .book .preview-img, .studios-page .about-container > .inner .column.recent-work .recent-publications .book .preview-img, .studios-page .about-container > .inner .column.network .recent-publications .book .preview-img, .about-page .studio-container > .inner .column.recent-work .recent-publications .book .preview-img, .about-page .studio-container > .inner .column.network .recent-publications .book .preview-img, .about-page .about-container > .inner .column.recent-work .recent-publications .book .preview-img, .about-page .about-container > .inner .column.network .recent-publications .book .preview-img {
+            height: 20vw;
+            max-height: 320px;
+            width: 100%;
+            margin-bottom: 15px;
+            margin-bottom: 30px;
+            text-align: center; }
+            .studio-page .studio-container > .inner .column.recent-work .recent-publications .book .preview-img img.preview, .studio-page .studio-container > .inner .column.network .recent-publications .book .preview-img img.preview, .studio-page .about-container > .inner .column.recent-work .recent-publications .book .preview-img img.preview, .studio-page .about-container > .inner .column.network .recent-publications .book .preview-img img.preview, .studios-page .studio-container > .inner .column.recent-work .recent-publications .book .preview-img img.preview, .studios-page .studio-container > .inner .column.network .recent-publications .book .preview-img img.preview, .studios-page .about-container > .inner .column.recent-work .recent-publications .book .preview-img img.preview, .studios-page .about-container > .inner .column.network .recent-publications .book .preview-img img.preview, .about-page .studio-container > .inner .column.recent-work .recent-publications .book .preview-img img.preview, .about-page .studio-container > .inner .column.network .recent-publications .book .preview-img img.preview, .about-page .about-container > .inner .column.recent-work .recent-publications .book .preview-img img.preview, .about-page .about-container > .inner .column.network .recent-publications .book .preview-img img.preview {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+              object-position: bottom;
+              filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.2)); }
+      .studio-page .studio-container > .inner .column.columns-3, .studio-page .about-container > .inner .column.columns-3, .studios-page .studio-container > .inner .column.columns-3, .studios-page .about-container > .inner .column.columns-3, .about-page .studio-container > .inner .column.columns-3, .about-page .about-container > .inner .column.columns-3 {
+        width: 60%; }
+        .studio-page .studio-container > .inner .column.columns-3 .main-content, .studio-page .about-container > .inner .column.columns-3 .main-content, .studios-page .studio-container > .inner .column.columns-3 .main-content, .studios-page .about-container > .inner .column.columns-3 .main-content, .about-page .studio-container > .inner .column.columns-3 .main-content, .about-page .about-container > .inner .column.columns-3 .main-content {
+          display: -webkit-box;
+          /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+          display: -ms-flexbox;
+          /* TWEENER - IE 10 */
+          display: -moz-box;
+          /* MOZILLA */
+          display: -webkit-flex;
+          /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+          display: flex;
+          /* NEW, Spec - Firefox, Chrome, Opera */
+          flex-direction: row;
+          padding: 0 15px 60px; }
+          .studio-page .studio-container > .inner .column.columns-3 .main-content .main-column, .studio-page .about-container > .inner .column.columns-3 .main-content .main-column, .studios-page .studio-container > .inner .column.columns-3 .main-content .main-column, .studios-page .about-container > .inner .column.columns-3 .main-content .main-column, .about-page .studio-container > .inner .column.columns-3 .main-content .main-column, .about-page .about-container > .inner .column.columns-3 .main-content .main-column {
+            width: 50%; }
+            .studio-page .studio-container > .inner .column.columns-3 .main-content .main-column:first-of-type, .studio-page .about-container > .inner .column.columns-3 .main-content .main-column:first-of-type, .studios-page .studio-container > .inner .column.columns-3 .main-content .main-column:first-of-type, .studios-page .about-container > .inner .column.columns-3 .main-content .main-column:first-of-type, .about-page .studio-container > .inner .column.columns-3 .main-content .main-column:first-of-type, .about-page .about-container > .inner .column.columns-3 .main-content .main-column:first-of-type {
+              padding-right: 15px; }
+            .studio-page .studio-container > .inner .column.columns-3 .main-content .main-column:last-of-type, .studio-page .about-container > .inner .column.columns-3 .main-content .main-column:last-of-type, .studios-page .studio-container > .inner .column.columns-3 .main-content .main-column:last-of-type, .studios-page .about-container > .inner .column.columns-3 .main-content .main-column:last-of-type, .about-page .studio-container > .inner .column.columns-3 .main-content .main-column:last-of-type, .about-page .about-container > .inner .column.columns-3 .main-content .main-column:last-of-type {
+              padding-left: 15px; }
+            .studio-page .studio-container > .inner .column.columns-3 .main-content .main-column.main-images img, .studio-page .about-container > .inner .column.columns-3 .main-content .main-column.main-images img, .studios-page .studio-container > .inner .column.columns-3 .main-content .main-column.main-images img, .studios-page .about-container > .inner .column.columns-3 .main-content .main-column.main-images img, .about-page .studio-container > .inner .column.columns-3 .main-content .main-column.main-images img, .about-page .about-container > .inner .column.columns-3 .main-content .main-column.main-images img {
+              width: 100%;
+              margin-bottom: 15px; }
+        .studio-page .studio-container > .inner .column.columns-3 .cs-column, .studio-page .about-container > .inner .column.columns-3 .cs-column, .studios-page .studio-container > .inner .column.columns-3 .cs-column, .studios-page .about-container > .inner .column.columns-3 .cs-column, .about-page .studio-container > .inner .column.columns-3 .cs-column, .about-page .about-container > .inner .column.columns-3 .cs-column {
+          display: -webkit-box;
+          /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+          display: -ms-flexbox;
+          /* TWEENER - IE 10 */
+          display: -moz-box;
+          /* MOZILLA */
+          display: -webkit-flex;
+          /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+          display: flex;
+          /* NEW, Spec - Firefox, Chrome, Opera */
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 65vh; }
+          .studio-page .studio-container > .inner .column.columns-3 .cs-column img, .studio-page .about-container > .inner .column.columns-3 .cs-column img, .studios-page .studio-container > .inner .column.columns-3 .cs-column img, .studios-page .about-container > .inner .column.columns-3 .cs-column img, .about-page .studio-container > .inner .column.columns-3 .cs-column img, .about-page .about-container > .inner .column.columns-3 .cs-column img {
+            width: 100%;
+            max-width: 500px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.jspContainer
+{
+	overflow: hidden;
+	position: relative;
+}
+
+.jspPane
+{
+	position: absolute;
+}
+
+.jspVerticalBar
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 16px;
+	height: 100%;
+	background: red;
+}
+
+.jspHorizontalBar
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 16px;
+	background: red;
+}
+
+.jspCap
+{
+	display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+	float: left;
+}
+
+.jspTrack
+{
+	background: #dde;
+	position: relative;
+}
+
+.jspDrag
+{
+	background: #bbd;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 100%;
+}
+
+.jspArrow
+{
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+}
+
+.jspArrow.jspDisabled
+{
+	cursor: default;
+	background: #80808d;
+}
+
+.jspVerticalBar .jspArrow
+{
+	height: 16px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+	width: 16px;
+	float: left;
+	height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+	outline: none;
+}
+
+.jspCorner
+{
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  a,
+  a:visited {
+    text-decoration: underline; }
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */ }
+  tr,
+  img {
+    page-break-inside: avoid; }
+  img {
+    max-width: 100% !important; }
+  @page {
+    margin: 0.5cm; }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+
+
+
+
+
+
+

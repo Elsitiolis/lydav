@@ -92,39 +92,26 @@ img.logologo {
 
 /*BODY-BODY-BODY-BODY-BODY*/
 .columnas {
-  padding: 50px 50px 70px 50px;
+  padding: 50px 50px 100px 50px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-row-gap: 50px;
   grid-column-gap: 50px;
+  background-color:pink;
  
 }
-
+/*COLUMNA TEXTO*/
 .textotexto{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start:1 ;
+  grid-row-end: 2;
   padding: 0 20px 0 20px;
-  display:inline-block;
-
-}
-
-.contenido {
-  position: relative;
   display: grid;
-  grid-template-columns:  30% 70% ;
-;
-  
-}
-.contenidodeverdad {
-  float: right;
-  position: relative;
-  font-size: 19px;
-  overflow: hidden;
-  text-align: right;
-  
-}
-.fotoabout{
-  padding:90px 0px 4px 0px;
+  background-color:mediumvioletred;
+
 }
 
-/*COLUMNA ACTUALIDAD*/
 .apropos{
   text-align: right;
   font-size: 29px;
@@ -138,20 +125,43 @@ img.logologo {
   padding:0px 0px 15px 0px;
  
 }
+.contenido {
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+ }
+
 .links a{
   font-size: 20px;
   text-decoration: none;
   color: white;
 }
-
 .links a:hover{
   text-decoration: underline;
 }
+.contenidodeverdad {
+  float: right;
+  position: relative;
+  font-size: 18px;
+  overflow: hidden;
+  text-align: right;
+  
+}
 
 
+/*COLUMNA IMAGEN*/
+.foto{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start:1 ;
+  grid-row-end: 2;
+  z-index: 80;
+  padding:120px 0px 4px 0px;
+  background-color:mediumvioletred;
+}
 .content-image{border-radius:100%;}
-/*FOOTER-FOOTER-FOOTER-FOOTER*/
 
+
+/*FOOTER-FOOTER-FOOTER-FOOTER*/
 .insta {
   float: left;
   color: white;

@@ -68,6 +68,7 @@ img.logologo {
 }
 .dropdown-content a {
   color: white;
+  font-size: 12px;
   padding: 0px 0px;
   text-align:right;
   text-decoration: none;
@@ -284,7 +285,7 @@ p {
       .fancybox-button .cross span.line:last-of-type {
         transform: rotate(-45deg); }
 
-.book-page .book-container {padding-top: 100px;
+.book-page .book-container {
   position: absolute;
   left: 0;
   right: 0;
@@ -405,7 +406,7 @@ p {
       left: 0;
       right: 0;
       bottom: 0;
-      padding: 100px 20px 60px; } /*TOP PADDING CENTRO  */
+      padding: 0 20px 60px; } /*TOP PADDING CENTRO  */
       .book-page .c.book-image .book-gallery .slick-list, .book-page .c.book-image .book-gallery .slick-track {
         height: 100%; }
       .book-page .c.book-image .book-gallery .b-img {

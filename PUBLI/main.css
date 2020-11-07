@@ -16,7 +16,7 @@ img.logologo {
 
 .maingridcenter {
   display: grid;
-  grid-template-columns: 1fr 1fr;padding-bottom: 100px;}
+  grid-template-columns: 1fr 1fr}
 
 .mainsection {
   grid-column-start: 1; 
@@ -205,26 +205,7 @@ p {
   p strong {
     font-style: bold; }
 
-.admin.edit {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  background-color: #000;
-  color: #fff;
-  height: 30px;
-  padding: 0 10px;
-  padding-top: 5px;
-  z-index: 4000; }
 
-.admin.edit:hover, .admin.edit:hover a {
-  color: #000;
-  cursor: pointer; }
-
-.admin.edit a {
-  height: 50px; }
-
-.admin.edit.page {
-  z-index: 5000; }
 
 .c-scroll::-webkit-scrollbar {
   width: 6px; }
@@ -275,7 +256,7 @@ p {
     top: calc(50% - 25px);
     left: 10px; }
   .fancybox-button .arrow .head {
-    border-color: white;
+    border-color: red;
     border-width: 0 3px 3px 0;
     width: 21px;
     height: 21px;
@@ -285,7 +266,7 @@ p {
     right: 10px;
     top: 10px; }
     .fancybox-button--close:hover .cross span.line {
-      border-bottom-color: #F2BF29; }
+      border-bottom-color: red; }
   .fancybox-button .cross {
     height: 30px;
     width: 30px;
@@ -303,7 +284,7 @@ p {
       .fancybox-button .cross span.line:last-of-type {
         transform: rotate(-45deg); }
 
-.book-page .book-container {
+.book-page .book-container {padding-top: 100px;
   position: absolute;
   left: 0;
   right: 0;
@@ -313,9 +294,9 @@ p {
   -webkit-transition: top 0.5s ease;
   -moz-transition: top 0.5s ease;
   -ms-transition: top 0.5s ease;
-  -o-transition: top 0.5s ease;
+  -o-transition: to.p 0.5s ease;
   transition: top 0.5s ease; }
-  .book-page .book-container > .inner {
+  .book-page .book-container > .inner {padding-top: 100px;
     -webkit-overflow-scrolling: touch;
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -333,9 +314,9 @@ p {
     position: relative;
     height: 100%; }
 
-.book-page .c {
+.book-page .c { 
   overflow-y: auto; }
-  .book-page .c.book-previews {
+  .book-page .c.book-previews { 
     -webkit-overflow-scrolling: touch;
     width: 26%;
     display: -webkit-box;
@@ -424,7 +405,7 @@ p {
       left: 0;
       right: 0;
       bottom: 0;
-      padding: 0 20px 60px; }
+      padding: 100px 20px 60px; } /*TOP PADDING CENTRO  */
       .book-page .c.book-image .book-gallery .slick-list, .book-page .c.book-image .book-gallery .slick-track {
         height: 100%; }
       .book-page .c.book-image .book-gallery .b-img {

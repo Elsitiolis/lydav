@@ -5,36 +5,26 @@ div.logo {
     max-height:40%;
     left:50%;
     overflow:visible;
-	z-index: 11;
 }
 img.logologo {
     position:relative;
     max-width:100%;
     max-height:100%;
-    margin-left:-50%;
-	z-index: 11;}
-.maingridcenter {
-  display: grid;
-  grid-template-columns: 1fr 1fr}
+    margin-left:-50%;}
+
 .mainsection {
   grid-column-start: 1; 
   grid-column-end: 2; 
   grid-row-start: 1; 
   grid-row-end: 3;
-  
 }
 .mainaside {
   grid-column-start: 2; 
   grid-column-end: 3; 
   grid-row-start: 1; 
   grid-row-end: 3; 
+}
 
-}
-.maincontenedor{
-  padding: 27px 0px 0 70px;
-  /*width: 100%;*/
- display: inline-block;
-}
 
 /*DROPDOWN*/
 .dropbtn {
@@ -44,12 +34,7 @@ img.logologo {
   cursor: pointer;
   height: 50px;
   width: 50px;}
-.dropdown {
-  position: relative;
-  display: inline-block;
-  left: 860%;
-  
-}
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -57,7 +42,6 @@ img.logologo {
   background-color: none;
   min-width: 130px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
 }
 .dropdown-content a {
   color: white;
@@ -239,7 +223,7 @@ p {
       .fancybox-button .cross span.line:last-of-type {
         transform: rotate(-45deg); }
 
-.book-page .book-container {
+.book-page .book-container { 
   position: absolute;
   left: 0;
   right: 0;
@@ -251,7 +235,7 @@ p {
   -ms-transition: top 0.5s ease;
   -o-transition: to.p 0.5s ease;
   transition: top 0.5s ease; }
-  .book-page .book-container > .inner {padding-top: 100px;
+  .book-page .book-container > .inner {
     -webkit-overflow-scrolling: touch;
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -304,10 +288,10 @@ p {
       height: -moz-fit-content;
       height: fit-content;
       padding-bottom: 30px; }
-      .book-page .c.book-previews .prev-in.spreads {
+      .book-page .c.book-previews .prev-in.spreads { 
         flex-direction: row;
         flex-wrap: wrap; }
-        .book-page .c.book-previews .prev-in.spreads .primg {
+        .book-page .c.book-previews .prev-in.spreads .primg { 
           width: 50%; }
           .book-page .c.book-previews .prev-in.spreads .primg:first-of-type {
             margin-left: 50%; }
@@ -327,6 +311,7 @@ p {
           width: 100%; }
           .book-page .c.book-previews .prev-in.pages .primg:last-of-type {
             margin-bottom: 30px; }
+	.c.book-previews{margin-top: 140px} /*TOP PADDING   */
       .book-page .c.book-previews .prev-in .primg {
         position: relative;
         align-self: flex-end;
@@ -360,8 +345,8 @@ p {
       left: 0;
       right: 0;
       bottom: 0;
-      padding: 0 20px 60px; } /*TOP PADDING CENTRO  */
-      .book-page .c.book-image .book-gallery .slick-list, .book-page .c.book-image .book-gallery .slick-track {
+      padding: 0 20px z0px; } /*TOP PADDING CENTRO  */
+      .book-page .c.book-image .book-gallery .slick-list, .book-page .c.book-image .book-gallery .slick-track {padding-top: 70px; /*TOP PADDING   */
         height: 100%; }
       .book-page .c.book-image .book-gallery .b-img {
         text-align: center; }
@@ -379,7 +364,7 @@ p {
   padding-left: 20px;
   border-left: 2px solid black; }
 
-.book-page .book-info h2 {
+.book-page .book-info h2 {padding-top: 130px; /*TOP PADDING   */
   margin-bottom: 25px; }
 
 .book-page .book-details h5 {
